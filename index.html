@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="css_homepage.css">
+</head>
+
+<body>
+
+    <h1 class="pageTitle">Countdown Timer</h1>
+    <div class="timebuttons">
+        <div class="inner">
+            <div class="timebg">
+                <p id="demo" class="time">00:00.0</p>
+            </div>
+            <hr>
+            <a href="#" onclick="popup()" class="button stbtn">Set Time</a>
+            <a href="#" class="button startbtn" id="startbtn">Start</a>
+            <a href="#" class="button pauseresume" id="pauseresume">Pause</a>
+            <a href="#" onclick="stopTimer()" class="button stopbutton">Stop</a>
+        </div>
+    </div>
+    <br>
+    <div id="popup-background" class="popup-background" style="display: none;"></div>
+    <div id="pop" class="pop" style="display: none;">
+        <form>
+            <p class=" set">Set minutes</p>
+            <input id="minutes" type="text" pattern="[0-9]" maxlength="2" placeholder="00"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" />
+
+            <p class="set">Set Seconds</p>
+            <input id="seconds" type="text" pattern="[0-9]*" maxlength="2" placeholder="00"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" />
+            <br>
+
+            <a href="#" onclick="setTimer()" class="button button2">Ok</a>
+            <a href="#" onclick="popup()" class="button button2">Cancel</a>
+        </form>
+    </div>
+</body>
+
+
+</html>

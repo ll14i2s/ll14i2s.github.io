@@ -1,0 +1,124 @@
+body {
+  background-color: #c5e4e7;
+}
+.pageTitle {
+  text-align: center;
+  color: #406365;
+  font-weight: 10;
+  font-size: 50px;
+}
+cinput[type="text"] {
+  background: transparent;
+  border: none;
+}
+
+.set {
+  font-size: larger;
+  margin-bottom: 5px;
+}
+input[type="text"] {
+  color: #37bead;
+  background-color: transparent;
+  border: none;
+  font-size: 50px;
+  width: 80px;
+}
+
+.popup-background {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.5;
+  animation: fadeInOut 4s linear forwards;
+  -webkit-transition: same!;
+  -moz-transition: same!;
+  -o-transition: same!;
+}
+
+.pop {
+  background-color: #00474b;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  margin-top: -215px;
+  left: 50%;
+  margin-left: -150px;
+  width: 300px;
+  height: 430px;
+  text-align: center;
+  color: white;
+}
+
+.button {
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #00474b;
+  border: none;
+  color: white;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 149px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button2 {
+  background-color: #0d686d;
+}
+
+.startbtn,
+.pauseresume {
+  background-color: gray;
+}
+
+.stopbutton {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 460px;
+}
+
+.timebuttons {
+  position: absolute;
+  top: 50%;
+  margin-top: -260px;
+  left: 50%;
+  margin-left: -260px;
+
+  background-color: white;
+  border-radius: 10px;
+  width: 520px;
+  height: 360px;
+  text-align: center;
+}
+
+.inner {
+  width: 460px;
+  height: 300px;
+  display: inline-block;
+}
+.timebg {
+  background-color: #f3f8fb;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+.time {
+  vertical-align: middle;
+  font-size: 100px;
+  margin: 0;
+
+  border-radius: 10px;
+  color: #677273;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
